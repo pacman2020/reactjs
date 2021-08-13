@@ -6,7 +6,7 @@ const FormTask = () =>{
 
   return (
     <>
-      <div className="form-tasks" >
+      <div className="container" >
       <NavBar></NavBar>
         <h3>New Tasks</h3>
       </div>

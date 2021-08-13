@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NavBar from '../compontens/NavBar';
 import './style.css';
 
 const ListTask = () =>{
-  const [tasks, setTasks] = useState([
+  const [tasks ] = useState([
     { id: 1, title: 'limpa casa', concluido: false },
     { id: 2, title: 'limpa carro', concluido: false },
     { id: 3, title: 'estuda', concluido: true }
@@ -11,7 +11,7 @@ const ListTask = () =>{
 
   return (
     <>
-      <div className="lista-tasks" >
+      <div className="container" >
       <NavBar></NavBar>
         <h3>List Tasks</h3>
         <ul>

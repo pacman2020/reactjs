@@ -7,17 +7,9 @@ const Menu = () =>{
     return (
       <>
         <nav className="navbar">
-            <ul className="">
-                <li className="">
-                <Link className="urls" to="/">Home</Link>
-                </li>
-                <li className="">
-                <Link to="new/">New Task</Link>
-                </li>
-                <li className="">
-                <Link to="about/">About</Link>
-                </li>
-            </ul>
+          <Link className="urls" to="/">Home</Link>
+          <Link className="urls" to="new">New Task</Link>
+          <Link className="urls" to="about">About</Link>
         </nav>
       </>
     )
