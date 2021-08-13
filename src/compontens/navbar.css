@@ -1,0 +1,14 @@
+.navbar {
+    text-align: center;
+    /* background: rgb(10, 42, 129); */
+}
+
+.navbar li{
+    /* background: rgb(10, 129, 60); */
+    display: inline;
+}
+
+.navbar .urls{
+    list-style-type: none;
+    display: inline;
+}
