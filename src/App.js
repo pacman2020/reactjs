@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import './style.css';
 
-function App() {
+const App = () =>{
+  const [tasks, setTasks] = useState([
+    { id: 1, title: 'limpa casa', concluido: false },
+    { id: 2, title: 'limpa carro', concluido: false },
+    { id: 3, title: 'estuda', concluido: true }
+  ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <div className="lista-tasks" >
+        <h3>List Tasks</h3>
+        <ul>
+          {tasks.map(task =>(
+            <li key={task.id} >
+              <span>{task.title}</span>
+              <span className="concluido" >{ task.concluido ? 'ativo':'desativado'}</span>
+            </li>
+          )) }
+        </ul>
+        <button className="btn" >salva</button>
+      </div>
+    </>
+  )
+};
 
 export default App;
