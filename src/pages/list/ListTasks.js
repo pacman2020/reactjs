@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NavBar from '../compontens/NavBar';
-import './style.css';
+import NavBar from '../../compontens/NavBar';
+import '../style.css';
 
 const ListTask = () =>{
   const [tasks ] = useState([

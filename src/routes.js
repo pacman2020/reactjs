@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import ListTasks from './pages/ListTasks';
-import FormTasks from './pages/FormTask';
-import About from './pages/About';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ListTasks from './pages/list/ListTasks';
+import FormTasks from './pages/form/FormTask';
+import About from './pages/about/About';
 
 
 const Routes = () => (
