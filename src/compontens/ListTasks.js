@@ -4,7 +4,7 @@ import '../style.css';
 
 const ListTask = () =>{
   const [tasks, setTasks ] = useState([
-    { id: 1, title: 'limpa casa', concluido: false },
+    { id: 1, title: 'limpa casa', concluido: true },
   ])
   const [title, setTitle] = useState('')
 
@@ -40,7 +40,9 @@ const ListTask = () =>{
           {tasks.map(task =>(
             <li key={task.id} >
               <span>{task.title}</span>
-              <span className="concluido" >{ task.concluido ? 'ativo':'desativado'}</span>
+              <span className="concluido" >
+                { task.concluido ? <i class="fas fa-check-circle"></i>:
+                <i class="far fa-play-circle"></i>}</span>
             </li>
           )) }
         </ul>

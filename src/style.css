@@ -17,12 +17,6 @@ color: white;
 padding: 5px;
 }
 
-.concluido{
-   padding: 5px;
-   border-radius: 4px;
-   background-color: rgb(48, 51, 94);
-}
-
 .btn {
     text-decoration: none;
    color: white;
