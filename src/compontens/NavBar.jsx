@@ -8,7 +8,6 @@ const Menu = () =>{
       <>
         <nav className="navbar">
           <Link className="urls" to="/">Home</Link>
-          <Link className="urls" to="new">New Task</Link>
           <Link className="urls" to="about">About</Link>
         </nav>
       </>

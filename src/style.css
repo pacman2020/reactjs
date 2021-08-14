@@ -36,10 +36,10 @@ padding: 5px;
     display: flex;
     align-items: center;
     padding: 3px;
-    flex-direction: column;
 }
 
-.container form, input {
+.container form, input, .btn {
     padding: 10px;
     margin-top: 5px;
+    justify-content:center;
 }
