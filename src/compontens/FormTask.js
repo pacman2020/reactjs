@@ -5,11 +5,15 @@ import NavBar from '../compontens/NavBar';
 
 
 const FormTask = () =>{
-  const [tasks, setTasks ] = React.useState([{ id: 1, title: 'limpa casa', concluido: true }])
+  const [tasks, setTasks ] = React.useState([{ id: 1, title: 'limpa casa', concluido: false }])
   const [title, setTitle] = React.useState('')
 
   function handsetTasks(e){
     e.preventDefault();
+
+    if(title === ''){
+      return alert('preencha o campo');
+    }
 
     const newTask = {
       id: Date.now(),
